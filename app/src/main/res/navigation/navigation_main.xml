@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/cityChooserFragment"
+        android:name="com.example.weatherapp.presentation.choose_city.CityChooserFragment"
+        android:label="CityChooserFragment"
+        app:enterAnim="@anim/slide_in_up"
+        app:exitAnim="@anim/slide_out_up"
+        app:popEnterAnim="@anim/slide_enter_left"
+        app:popExitAnim="@anim/slide_out_left">
+    </fragment>
+    <fragment
+        android:id="@+id/weatherInfoFragment"
+        android:name="com.example.weatherapp.presentation.weather_info.WeatherInfoFragment"
+        android:label="WeatherInfoFragment"
+        app:enterAnim="@anim/slide_enter_left"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_enter_left"
+        app:popExitAnim="@anim/slide_out_left"/>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.weatherapp.presentation.welcome.WelcomeFragment"
+        android:label="WelcomeFragment"
+        app:enterAnim="@anim/slide_enter_left"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_enter_left"
+        app:popExitAnim="@anim/slide_out_left">
+    </fragment>
+</navigation>

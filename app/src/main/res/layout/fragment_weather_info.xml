@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tvCityName"
+        tools:text="tvCityName"
+        style="@style/Heading3"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/dp_64"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvDistrictName"
+        tools:text="tvDistrictName"
+        android:textAllCaps="true"
+        style="@style/CaptionSmall"
+        android:textColor="@color/gray_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvCityName"
+        app:layout_constraintEnd_toEndOf="@id/tvCityName"
+        android:layout_marginTop="@dimen/dp_8"
+        app:layout_constraintTop_toBottomOf="@id/tvCityName"/>
+
+    <TextView
+        android:id="@+id/tvRainChance"
+        tools:text="tvRainChance"
+        android:textAllCaps="true"
+        style="@style/CaptionLarge"
+        android:textColor="@color/primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvDistrictName"
+        app:layout_constraintEnd_toEndOf="@id/tvDistrictName"
+        android:layout_marginTop="@dimen/dp_64"
+        app:layout_constraintTop_toBottomOf="@id/tvDistrictName"/>
+
+    <ImageView
+        android:id="@+id/ivWeather"
+        android:layout_width="@dimen/dp_96"
+        android:layout_height="@dimen/dp_96"
+        app:layout_constraintStart_toStartOf="@id/tvRainChance"
+        app:layout_constraintEnd_toEndOf="@id/tvRainChance"
+        android:layout_marginTop="@dimen/dp_48"
+        tools:src="@drawable/check"
+        app:layout_constraintTop_toBottomOf="@id/tvRainChance"/>
+
+    <TextView
+        android:id="@+id/tvTemperature"
+        tools:text="tvTemperature"
+        style="@style/Heading1"
+        android:textColor="@color/dark_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/ivWeather"
+        app:layout_constraintEnd_toEndOf="@id/ivWeather"
+        android:layout_marginTop="@dimen/dp_32"
+        app:layout_constraintTop_toBottomOf="@id/ivWeather"/>
+
+    <TextView
+        android:id="@+id/tvFeelsLike"
+        tools:text="tvFeelsLike"
+        style="@style/CaptionMedium"
+        android:textColor="@color/gray_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvTemperature"
+        app:layout_constraintEnd_toEndOf="@id/tvTemperature"
+        android:layout_marginTop="@dimen/dp_8"
+        app:layout_constraintTop_toBottomOf="@id/tvTemperature"/>
+
+    <include android:id="@+id/progressBar" layout="@layout/view_progress_loading" android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

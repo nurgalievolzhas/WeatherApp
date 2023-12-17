@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Heading1">
+        <item name="android:fontFamily">@font/commons_classic_demi_bold</item>
+        <item name="android:textSize">@dimen/sp_72</item>
+        <item name="lineHeight">@dimen/sp_72</item>
+    </style>
+
+    <style name="Heading2">
+        <item name="android:fontFamily">@font/commons_classic_demi_bold</item>
+        <item name="android:textSize">@dimen/sp_48</item>
+        <item name="lineHeight">@dimen/sp_48</item>
+    </style>
+
+    <style name="Heading3">
+        <item name="android:fontFamily">@font/commons_classic_demi_bold</item>
+        <item name="android:textSize">@dimen/sp_40</item>
+        <item name="lineHeight">@dimen/sp_40</item>
+    </style>
+
+    <style name="Heading4">
+        <item name="android:fontFamily">@font/commons_classic_demi_bold</item>
+        <item name="android:textSize">@dimen/sp_32</item>
+    </style>
+
+    <style name="Heading5">
+        <item name="android:fontFamily">@font/commons_classic_demi_bold</item>
+        <item name="android:textSize">@dimen/sp_26</item>
+        <item name="lineHeight">@dimen/sp_26</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Heading6">
+        <item name="android:fontFamily">@font/commons_classic_demi_bold</item>
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="lineHeight">@dimen/sp_26</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Heading7">
+        <item name="android:fontFamily">@font/commons_classic_demi_bold</item>
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="lineHeight">@dimen/sp_24</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="ParagraphLarge">
+        <item name="android:fontFamily">@font/commons_classic_regular</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="lineHeight">@dimen/sp_24</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="ParagraphLargeMedium">
+        <item name="android:fontFamily">@font/commons_classic_medium</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="lineHeight">@dimen/sp_24</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Paragraph">
+        <item name="android:fontFamily">@font/commons_classic_regular</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="lineHeight">@dimen/sp_22</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="ParagraphMedium">
+        <item name="android:fontFamily">@font/commons_classic_medium</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="lineHeight">@dimen/sp_22</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="ParagraphSmall">
+        <item name="android:fontFamily">@font/commons_classic_regular</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="lineHeight">@dimen/sp_20</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="ParagraphSmallMedium">
+        <item name="android:fontFamily">@font/commons_classic_medium</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="lineHeight">@dimen/sp_20</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Caption">
+        <item name="android:fontFamily">@font/commons_classic_regular</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="lineHeight">@dimen/sp_20</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="CaptionMedium">
+        <item name="android:fontFamily">@font/commons_classic_medium</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="lineHeight">@dimen/sp_20</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <!--fixme сам добавил не из стилей, так как с такими параметрами не было прописано-->
+    <style name="CaptionSmall">
+        <item name="android:fontFamily">@font/commons_classic_regular</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="lineHeight">@dimen/sp_16</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="CaptionLarge">
+        <item name="android:fontFamily">@font/commons_classic_regular</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="lineHeight">@dimen/sp_20</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:fontFamily">@font/commons_classic_medium</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="lineHeight">@dimen/sp_24</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <style name="LabelSmall">
+        <item name="android:fontFamily">@font/commons_classic_medium</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="lineHeight">@dimen/sp_20</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+</resources>
