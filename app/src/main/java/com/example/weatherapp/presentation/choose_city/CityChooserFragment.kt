@@ -7,18 +7,16 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.RecyclerView
 import com.example.weatherapp.R
 import com.example.weatherapp.common.constants.ARGConstants.ARG_CITY_DATA
 import com.example.weatherapp.common.ext.getGroupieAdapter
-import com.example.weatherapp.common.ext.onBackPressed
+import com.example.weatherapp.common.utils.EventObserver
 import com.example.weatherapp.databinding.FragmentCityChooserBinding
 import com.xwray.groupie.GroupAdapter
-import com.xwray.groupie.GroupieAdapter
 import com.xwray.groupie.GroupieViewHolder
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class CityChooserFragment: Fragment() {
+class CityChooserFragment : Fragment() {
 
     private var _binding: FragmentCityChooserBinding? = null
     private val binding get() = _binding!!
@@ -49,14 +47,14 @@ class CityChooserFragment: Fragment() {
         cities.observe(viewLifecycleOwner) {
             binding.rvCityChooser.getGroupieAdapter().update(it)
         }
-        navigateToWeatherInfo.observe(viewLifecycleOwner) {
+        navigateToWeatherInfo.observe(viewLifecycleOwner, EventObserver {
             findNavController().navigate(
                 R.id.weatherInfoFragment,
                 bundleOf(
                     ARG_CITY_DATA to it
                 )
             )
-        }
+        })
     }
 
     override fun onDestroyView() {

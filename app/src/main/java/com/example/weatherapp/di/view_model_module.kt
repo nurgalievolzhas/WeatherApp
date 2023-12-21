@@ -10,8 +10,6 @@ val viewModelModule = module {
         WeatherInfoViewModel(weatherRepository = get())
     }
     viewModel {
-        CityChooserViewModel(
-            weatherRepository = get()
-        )
+        CityChooserViewModel()
     }
 }
